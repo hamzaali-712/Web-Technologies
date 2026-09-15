@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Room Booking</title>
+</head>
+<body>
+
+    <h1>Hotel Room Booking Form</h1>
+    <hr>
+
+    <form>
+        <p>
+            Guest Name:<br>
+            <input type="text" name="guestname" size="30">
+        </p>
+
+        <p>
+            Email:<br>
+            <input type="email" name="email" size="30">
+        </p>
+
+        <p>
+            Password:<br>
+            <input type="password" name="password" size="30">
+        </p>
+
+        <p>
+            Number of Guests:<br>
+            <input type="number" name="guests" min="1" max="10">
+        </p>
+
+        <p>
+            Room Type:<br>
+            <select name="roomtype">
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="suite">Executive Suite</option>
+            </select>
+        </p>
+
+        <p>
+            Additional Facilities:<br>
+            <input type="checkbox" name="facility" value="breakfast"> Breakfast<br>
+            <input type="checkbox" name="facility" value="wifi"> Free WiFi<br>
+            <input type="checkbox" name="facility" value="parking"> Parking<br>
+            <input type="checkbox" name="facility" value="laundry"> Laundry Service
+        </p>
+
+        <p>
+            Gender:<br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+        </p>
+
+        <p>
+            Check-in Date:<br>
+            <input type="date" name="checkin">
+        </p>
+
+        <p>
+            Check-out Date:<br>
+            <input type="date" name="checkout">
+        </p>
+
+        <p>
+            Preferred Check-in Time:<br>
+            <input type="time" name="checkintime">
+        </p>
+
+        <p>
+            Website / URL:<br>
+            <input type="url" name="website" size="30">
+        </p>
+
+        <p>
+            <input type="submit" value="Submit Booking">
+            <input type="reset" value="Reset Form">
+        </p>
+    </form>
+
+</body>
+</html>

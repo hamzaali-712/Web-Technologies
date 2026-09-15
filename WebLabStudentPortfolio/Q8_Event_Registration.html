@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+</head>
+<body>
+
+    <h1>Music Festival Registration Form</h1>
+    <hr>
+
+    <form>
+        <p>
+            Participant Name:<br>
+            <input type="text" name="participantname" size="30">
+        </p>
+
+        <p>
+            Email:<br>
+            <input type="email" name="email" size="30">
+        </p>
+
+        <p>
+            Phone:<br>
+            <input type="tel" name="phone" size="30">
+        </p>
+
+        <p>
+            Gender:<br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+        </p>
+
+        <p>
+            Ticket Type:<br>
+            <select name="tickettype">
+                <option value="standard">Standard</option>
+                <option value="vip">VIP</option>
+                <option value="premium">Premium</option>
+                <option value="student">Student</option>
+            </select>
+        </p>
+
+        <p>
+            Number of Tickets:<br>
+            <input type="number" name="tickets" min="1" max="10">
+        </p>
+
+        <p>
+            Preferred Event Date:<br>
+            <input type="date" name="eventdate">
+        </p>
+
+        <p>
+            Preferred Time:<br>
+            <input type="time" name="eventtime">
+        </p>
+
+        <p>
+            Food Preference:<br>
+            <input type="radio" name="food" value="veg"> Vegetarian
+            <input type="radio" name="food" value="nonveg"> Non Vegetarian
+            <input type="radio" name="food" value="none"> No Food
+        </p>
+
+        <p>
+            Additional Facilities:<br>
+            <input type="checkbox" name="facility" value="parking"> Parking<br>
+            <input type="checkbox" name="facility" value="transport"> Transport<br>
+            <input type="checkbox" name="facility" value="merchandise"> Festival Merchandise<br>
+            <input type="checkbox" name="facility" value="backstage"> Backstage Pass
+        </p>
+
+        <p>
+            Upload Identification Document:<br>
+            <input type="file" name="idcard">
+        </p>
+
+        <p>
+            Comments:<br>
+            <textarea name="comments" rows="6" cols="40"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Register Now">
+            <input type="reset" value="Reset Form">
+        </p>
+    </form>
+
+</body>
+</html>

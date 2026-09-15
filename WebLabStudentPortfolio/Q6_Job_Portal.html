@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Portal</title>
+</head>
+<body>
+
+    <h1>Job Application Form</h1>
+    <hr>
+
+    <form>
+        <p>
+            Applicant Name:<br>
+            <input type="text" name="applicantname" size="30">
+        </p>
+
+        <p>
+            Email:<br>
+            <input type="email" name="email" size="30">
+        </p>
+
+        <p>
+            Phone Number:<br>
+            <input type="tel" name="phone" size="30">
+        </p>
+
+        <p>
+            Password:<br>
+            <input type="password" name="password" size="30">
+        </p>
+
+        <p>
+            Gender:<br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+        </p>
+
+        <p>
+            Qualification:<br>
+            <input type="radio" name="qualification" value="intermediate"> Intermediate
+            <input type="radio" name="qualification" value="bachelor"> Bachelor
+            <input type="radio" name="qualification" value="master"> Master
+        </p>
+
+        <p>
+            Job Position:<br>
+            <select name="position">
+                <option value="webdeveloper">Web Developer</option>
+                <option value="softwareengineer">Software Engineer</option>
+                <option value="dataanalyst">Data Analyst</option>
+                <option value="networkadmin">Network Administrator</option>
+            </select>
+        </p>
+
+        <p>
+            City:<br>
+            <input type="text" name="city" list="citylist" size="30">
+            <datalist id="citylist">
+                <option value="Rawalpindi">
+                <option value="Islamabad">
+                <option value="Lahore">
+                <option value="Karachi">
+                <option value="Peshawar">
+            </datalist>
+        </p>
+
+        <p>
+            Expected Salary:<br>
+            <input type="number" name="salary" min="25000" max="500000">
+        </p>
+
+        <p>
+            Available Date:<br>
+            <input type="date" name="availabledate">
+        </p>
+
+        <p>
+            Upload CV:<br>
+            <input type="file" name="cv">
+        </p>
+
+        <p>
+            Cover Letter:<br>
+            <textarea name="coverletter" rows="6" cols="40"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit Application">
+            <input type="reset" value="Reset Form">
+        </p>
+    </form>
+
+</body>
+</html>
